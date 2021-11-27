@@ -13,7 +13,7 @@ createAccount = () => {
       })
          .then((result) => {
             alert(result.data.message);
-            window.location.assign('index.html');
+            window.location.assign('/');
          })
          .catch((err) => {
             alert(err.response.data.message);

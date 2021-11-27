@@ -5,7 +5,7 @@ let api = axios.create({
 getLoggedUserID = () => {
    if (!localStorage.getItem('loggedID')) {
       alert('Faça login ou crie uma conta!');
-      window.location.assign('index.html');
+      window.location.assign('/');
    } else return localStorage.getItem('loggedID');
 };
 
